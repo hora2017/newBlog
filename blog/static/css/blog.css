@@ -18,6 +18,10 @@ h1, h2, h3, h4 {
     font-family: 'Lobster', 'Nanum Gothic';
 }
 
+a {
+    color: rgb(54, 54, 54);
+}
+
 .date {
     color: #828282;
 }
