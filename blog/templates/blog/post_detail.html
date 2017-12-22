@@ -5,7 +5,7 @@
         {{ post.published_date }}
     </div>
     {% else %}
-    <a href="url 'post_publish' pk=post.pk" class="btn btn-default">발행하기</a>
+    <a href="{% url 'post_publish' pk=post.pk %}" class="btn btn-default">발행하기</a>
     {% endif %} {% if user.is_authenticated %}
     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}">
         <span class="glyphicon glyphicon-pencil"></span>
@@ -41,4 +41,6 @@
 {% endif %}
 {% empty %}
 <p>아직 아무런 코멘트도 없네요 :(</p>
-{% endfor %} {% endblock %}
+{% endfor %}
+
+{% endblock %}
